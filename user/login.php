@@ -1,8 +1,11 @@
 <?php
 if (isset($_POST['submit'])) {
     require_once "../db.php";
+<<<<<<< HEAD
     session_start();
     
+=======
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
 
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -13,8 +16,11 @@ if (isset($_POST['submit'])) {
     if ($res->num_rows > 0) {
         $row = $res->fetch_assoc();
         if ($password === $row['password']) { 
+<<<<<<< HEAD
             $_SESSION['user_email']=$email;
             $_SESSION['user_id']=$row['id'];
+=======
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
             echo "Login successful!";
             header('location:dashboard.php');
         } else {
@@ -69,7 +75,10 @@ if (isset($_POST['submit'])) {
         </div>
         <button type="submit" name="submit" class="btn btn-primary w-100">Login</button>
         <p class="text-dark">Don't have an account? <a href="signup.php" style="text-decoration:none" class="fw-bolder text-danger">Sign up</a></p>
+<<<<<<< HEAD
         <button type="button" class="btn btn-danger w-100" onclick="window.location.href='google_login.php'">Login with Google</button>
+=======
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
     </form>
 
     <!-- Bootstrap JS -->

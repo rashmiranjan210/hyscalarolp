@@ -23,10 +23,13 @@ $get_users="select * from users";
 $run_users=$conn->query($get_users);
 $count_users=mysqli_num_rows($run_users);
 
+<<<<<<< HEAD
 $get_enroll="select * from enrollments";
 $run_enroll=$conn->query($get_enroll);
 $count_enroll=mysqli_num_rows($run_enroll);
 
+=======
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
 
 ?>
 
@@ -158,6 +161,7 @@ $count_enroll=mysqli_num_rows($run_enroll);
                         include 'includes/viewlesson.php';
                     }
                     ?>
+<<<<<<< HEAD
                       <?php
                     if(isset($_GET['view_users'])){
                         include 'includes/viewusers.php';
@@ -170,6 +174,8 @@ $count_enroll=mysqli_num_rows($run_enroll);
                     ?>
                     
 
+=======
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
                 
                     
                    

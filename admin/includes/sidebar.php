@@ -38,10 +38,17 @@
 
 
         <li class="nav-item text-center">
+<<<<<<< HEAD
           <a class="nav-link active" aria-current="page" href="index.php?view_users">View Student</a>
         </li>
         <li class="nav-item text-center">
           <a class="nav-link active" aria-current="page" href="index.php?view_feedback">View Feedback</a>
+=======
+          <a class="nav-link active" aria-current="page" href="index.php?view_customer">View Student</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link active" aria-current="page" href="index.php?view_order">View Feedback</a>
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
         </li>
         <!-- <li class="nav-item text-center">
           <a class="nav-link active" aria-current="page" href="index.php?view_payment">View Payment</a>

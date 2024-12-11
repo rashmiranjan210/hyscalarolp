@@ -19,6 +19,7 @@
     </div>
 </div>
 
+<<<<<<< HEAD
 <div class="row">
    <div class="col-lg-3 col-md-6">
     <div class="card text-dark " style="background-color:#edede9;">
@@ -84,6 +85,9 @@
         </a>
     </div>
    </div>
+=======
+
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
 
 
 

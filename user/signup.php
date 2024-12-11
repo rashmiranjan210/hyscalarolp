@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if (isset($_POST['submit'])) {
     require_once "../db.php";
     
@@ -27,6 +28,23 @@ if (isset($_POST['submit'])) {
         }
     }
 }
+=======
+if(isset($_POST['submit'])){
+    require_once "../db.php";
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $qry="INSERT INTO users(email,password) VALUES('$email','$password')";
+    $res=$conn->query($qry);
+    
+    if($res){
+        echo "One Record Inserted";
+        header('location:login.php');
+        } else {
+        echo "Error: ".$conn->error;
+        }
+}
+
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
 ?>
 
 <!DOCTYPE html>
@@ -62,10 +80,13 @@ if (isset($_POST['submit'])) {
 <body>
     <form action="signup.php" method="post" class="container-6">
         <div class="mb-3">
+<<<<<<< HEAD
             <label for="Name" class="form-label">Name</label>
             <input type="text" name="name" id="name" class="form-control" required>
         </div>
         <div class="mb-3">
+=======
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
             <label for="email" class="form-label">Email</label>
             <input type="email" name="email" id="email" class="form-control" required>
         </div>
@@ -77,6 +98,7 @@ if (isset($_POST['submit'])) {
             <label for="cpassword" class="form-label">Confirm Password</label>
             <input type="password" name="cpassword" id="cpassword" class="form-control" required>
         </div>
+<<<<<<< HEAD
         <?php if (isset($error)): ?>
             <div class="alert alert-danger">
                 <?php echo $error; ?>
@@ -96,6 +118,24 @@ if (isset($_POST['submit'])) {
             }
         });
     </script>
+=======
+        <button type="submit" name="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+
+
+
+    <script>
+document.querySelector('form').addEventListener('submit', function (e) {
+    const password = document.getElementById('password').value;
+    const cpassword = document.getElementById('cpassword').value;
+
+    if (password !== cpassword) {
+        e.preventDefault();
+        alert("Error: Password and Confirm Password do not match.");
+    }
+});
+</script>
+>>>>>>> 835b391cf80f338cc13d257528a7a7048d23847c
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
